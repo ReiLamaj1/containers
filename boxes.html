@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> 
+            Figura
+        </title>
+        <style>
+            .klasa1{
+                padding: 20px;
+                background-color: grey;
+            }
+            .klasa2{
+                padding: 40px;
+                background-color: yellow;
+            }
+            .klasa3{
+                display: flex;
+            }
+            .kutia1{
+                padding: 100px;
+                background-color: green;
+                flex-grow: 1;
+            }
+            .kutia2{
+                padding: 70px;
+                background-color:blue;
+                flex-grow: 1;
+            }
+            .klasa4{
+                padding: 70px;
+                background-color: violet;
+                display: flex;
+                justify-content: space-between;
+            }
+            .kutia3{
+                padding: 50px;
+                background-color:black;
+            }
+            .kutia4{
+                padding: 50px;
+                background-color:black;
+            }
+            .klasa5{
+                padding: 50px;
+                background-color: grey;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                height: 200px;
+            }
+            .kutia5{
+                padding: 20px;
+                background-color: red;
+            }
+            .kutia6{
+                padding: 20px;
+                background-color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="klasa1"></div>
+        <div class="klasa2"></div>
+        <div class="klasa3">
+            <div class="kutia1"></div>
+            <div class="kutia2"></div>
+        </div>
+        <div class="klasa4">
+            <div class="kutia3" id="kutia3_id" onclick="changeColor()"></div>
+            <div class="kutia4"></div>
+        </div>
+        <div class="klasa5">
+            <div class="kutia5" id="kutia5_id" onclick="changeDiv()"></div>
+            <div class="kutia6"></div>
+        </div>
+        <script>
+            function changeColor(){
+                const e=document.getElementById("kutia3_id").style.background="blue";
+            }
+            function changeDiv(){
+                const element=document.getElementById("kutia5_id").style.background="transparent";
+            }
+        </script>
+    </body>
+</html>
